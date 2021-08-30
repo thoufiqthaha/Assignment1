@@ -1,10 +1,9 @@
-
 pipeline {
     agent any
 
     parameters{
-        string(name: 'environment',description: 'Select your Environment')
-        string(name: 'appname',description: 'Select your Application Name')
+        string(name: 'FirstName',description: 'Enter your first name')
+        string(name: 'SecondName',description: 'Enter your second name')
     }
 
 
@@ -14,9 +13,8 @@ pipeline {
                 script {
                     echo "Going to run a shell script:"
                     sh """
-                    chmod +x Assin1.sh
-                    pwd
-                    ./Assin1.sh "${params.environment}" "${params.appname}" """
+                    chmod +x assin1.sh
+                    ./assin1.sh "${params.FirstName}" "${params.SecondName}" """
                 }
 
             }
