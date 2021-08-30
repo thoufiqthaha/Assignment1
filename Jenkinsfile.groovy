@@ -14,9 +14,9 @@ pipeline {
                 script {
                     echo "Going to run a shell script:"
                     sh """
-                    chmod +x Assin1.Sh
+                    chmod +x Assin1.sh
                     pwd
-                    ./Assin1.Sh "${params.environment}" "${params.appname}" """
+                    ./Assin1.sh "${params.environment}" "${params.appname}" """
                 }
 
             }
