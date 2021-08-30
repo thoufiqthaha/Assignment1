@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     parameters{
-        string(name: 'emvironment',description: 'Select your Environment')
+        string(name: 'environment',description: 'Select your Environment')
         string(name: 'appname',description: 'Select your Application Name')
     }
 
